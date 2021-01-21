@@ -1,0 +1,31 @@
+debug: true
+#定时检查代理有效性接口
+testIpApi: "http://myip.top"
+#定时检查代理有效性
+isTicker: true
+#定时检查有效性时间 毫秒 ms
+tickTime: 5000
+#代理测试拨号时间 毫秒 ms
+testDialTimeout: 5000
+#代理测试截止时间 毫秒  ms
+testDeadline: 5000
+#是否定期检查最小代理数
+isMinProxy: true
+#检查最小代理数间隔时间 毫秒  ms
+minProxyCheckTime: 3000
+#最小代理数量
+minProxyNum: 2
+#代理拨号超时 毫秒  ms
+dialTimeout: 10000
+#代理截止时间 毫秒  ms
+deadline: 10000
+#代理保存文件
+proxyFile: "proxy.txt"
+#代理api接口
+proxyApis:
+#芝麻代理 每日20
+  - "http://webapi.http.zhimacangku.com/getip?num=2&type=1&pro=&city=0&yys=0&port=1&pack=106723&ts=0&ys=0&cs=0&lb=1&sb=0&pb=4&mr=1&regions="
+#极光爬虫代理 每日20
+  - "http://d.jghttp.alicloudecs.com/getip?num=20&type=1&pro=&city=0&yys=0&port=1&pack=34846&ts=0&ys=0&cs=0&lb=1&sb=0&pb=4&mr=1&regions="
+#太阳http 50
+  - "http://http.tiqu.alibabaapi.com/getip?num=50&type=1&pack=62228&port=1&lb=1&pb=4&regions="
